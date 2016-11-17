@@ -19,7 +19,7 @@ listen.match(%w(enlists google inlets banana))
 
 # => ["inlets"]
 ```
-**Top Tip:** [%w?(some words)](http://stackoverflow.com/questions/1274675/ruby-what-does-warray-mean) is simply a shortcut for instantiating an array with items in it!
+**Top Tip:** [%w(some words)](http://stackoverflow.com/questions/1274675/ruby-what-does-warray-mean) is simply a shortcut for instantiating an array with items in it!
 
 ## Instructions
 
@@ -53,3 +53,5 @@ Two arrays are equal if they contain the same elements, in the same order. Remem
 * [StackOverflow](http://stackoverflow.com/) - [Ruby: what does %w(array) mean?](http://stackoverflow.com/questions/1274675/ruby-what-does-warray-mean)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/anagram-detector' title='Anagram Detector'>Anagram Detector</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/anagram-detector'>OO Anagram Detector</a> on Learn.co and start learning to code for free.</p>
