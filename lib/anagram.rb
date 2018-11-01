@@ -5,13 +5,9 @@ class Anagram
     @word = word
   end
 
-  def match(word_array)
-    anagrams = []
-    word_array.each do |word|
-      if word.split("").sort == @word.split("").sort
-        anagrams << word
-      end
+  def match(words)
+    words.select do |word|
+      word.split("").sort == @word.split("").sort
     end
-    anagrams
   end
 end
