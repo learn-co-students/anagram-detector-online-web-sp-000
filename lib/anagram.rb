@@ -3,7 +3,7 @@ require 'pry'
 #create class Anagram that takes a word on initalize
 class Anagram
 
-  attr_accessor :word , :split_word, :compare_word
+  attr_accessor :word
 
   def initialize(word)
     @word = word
