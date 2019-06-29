@@ -22,6 +22,11 @@ class Anagram
     match_array
   end
 
+  # alternative solution
+  # def match(anagram_words)
+  #   anagram_words.select {|w| w.chars.sort.join == @word.chars.sort.join}
+  # end
+
 end
 
 # binding.pry
