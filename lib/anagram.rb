@@ -23,8 +23,8 @@ class Anagram
   end
 
   # alternative solution
-  # def match(anagram_words)
-  #   anagram_words.select {|w| w.chars.sort.join == @word.chars.sort.join}
+  # def match(words_array)
+  #   words_array.select {|w| w.chars.sort.join == @word.chars.sort.join}
   # end
 
 end
