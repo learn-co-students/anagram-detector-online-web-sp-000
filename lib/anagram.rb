@@ -9,8 +9,8 @@ class Anagram
 
   def match(array)
     array.select do |i|          #select iterators block values to boolean, and we use that to filter our array
-      i.split("").sort == @name.split("").sort        #splits words at "", then sorts them
-    end                                               #compares to true/false. i is each iteration
+      i.split("").sort == @name.split("").sort        #splits words at " ", into an array of letters to evaluate
+    end                                               #compares to true/false. i is each iteration. sorting to find a match
   end                                                 #sort is our method comparison operator, through each iteration
 end
 #in method call, %w is notation to write an array of strings separated by spaces instead
