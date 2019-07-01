@@ -11,7 +11,7 @@ class Anagram
     array.select do |i|          #select iterators block values to boolean, and we use that to filter our array
       i.split("").sort == @name.split("").sort        #splits words at " ", into an array of letters to evaluate
     end                                               #compares to true/false. i is each iteration. sorting to find a match
-  end                                                 #sort is our method comparison operator, through each iteration
+  end                                                 # #sort through each letter. == is our comparison operator for each array we pass
 end
 #in method call, %w is notation to write an array of strings separated by spaces instead
 #of commas and without quotes around them
