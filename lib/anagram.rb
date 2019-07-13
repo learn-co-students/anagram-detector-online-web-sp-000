@@ -27,7 +27,6 @@ class Anagram
     words.each do |word|
       @new_array << word.split(//).sort.join
     end
-
   end
 
 
