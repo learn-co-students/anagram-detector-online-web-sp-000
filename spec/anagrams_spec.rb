@@ -1,4 +1,4 @@
-describe 'Anagram' do 
+describe 'Anagram' do
   it 'should detect no matches' do
     diaper = Anagram.new('diaper')
     expect(diaper.match(%w(hello world zombies pants dipper))).to eq([])
