@@ -1,16 +1,18 @@
 # Your code goes here!
 class Anagram
+  attr_accessor :word
   def initialize(word)
     @word = word
   end
   
   def match(word_array)
-    sorted_word = @word.sort
+    sorted_word = @word.chars.sort.join
     j = 0
+    word_match_array = []
     while j <= word_array.length
-      j+=1
-      sorted_word_in_array = word.sort
+      sorted_word_in_array = word_array[j].to_s.chars.sort.join
       i = 0
+      j+=1
       truth_array = []
       while i <= sorted_word_in_array.length
         if sorted_word[i]==sorted_word_in_array[i]
@@ -21,17 +23,16 @@ class Anagram
         i+=1
         if i == sorted_word_in_array.length
           if truth_array.all?{|x| x==true}
-            word = word
+            word_match_array << word_array[j-1]
           else
-            word = nil
+            nil
           end
-          word
         end
-        word
       end 
-      word
     end
-  
-  
+    word_match_array
   end
+end
 
+boy = Anagram.new("boy")
+puts boy.match(["ih", "hello", "yob"])
