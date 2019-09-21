@@ -2,10 +2,9 @@
 
 class Anagram
   
-  attr_accessor :word, :wordArray
+  attr_accessor :wordArray
   
   def initialize(word)
-    @word = word
     @wordArray = (word.split("")).sort
   end
     
