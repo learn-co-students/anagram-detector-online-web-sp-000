@@ -1,4 +1,4 @@
-# Anagram Detector
+ Anagram Detector
 
 ## Objectives
 
