@@ -1,14 +1,20 @@
 require 'pry'
 
-def Anagram
+class Anagram
   attr_accessor :word
   
   def initialize(word)
     @word = word
-  end
+end
   
-  def match
-    @word 
+  def match(array)
+    array.each do |some_word| 
+      if some_word.split('').sort != @word.split('').sort
+        array.delete(some_word)
+    end
+    array
+ end
+ 
 end
   
 end
