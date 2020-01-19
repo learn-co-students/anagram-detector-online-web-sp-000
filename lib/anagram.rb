@@ -5,13 +5,13 @@ require 'pry'
 class Anagram
   attr_accessor :word 
   
-  def initialize(word)
+  def initialize(word) 
     @word = word 
-  end
+  end 
   
   def match(psbl_anagrams)
-    psbl_anagrams.select do |psbl_anagram| 
+    psbl_anagrams.select do |psbl_anagram|
       psbl_anagram.split("").sort == @word.split("").sort
-    end
+    end 
   end 
 end 
