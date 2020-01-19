@@ -6,6 +6,7 @@ class Anagram
   attr_accessor :word 
   
   def initialize(word)
+    @word = word 
     # Create a .match method
     # The argument is an array of possible anagrams
     def self.match(psbl_anagrams)
@@ -17,8 +18,11 @@ class Anagram
       # After I find that the new word and element and the elements matches, I want to push that word into the new array.
       # After all of the elements are pushed into the arr, I want the new array returned
       # If the word does not match the elements, return an empty array 
-      psbl_anagrams.each do ||
-        
+      anagrams = []
+      psbl_anagrams.each do |psbl_anagram|
+        if psbl_anagram.split("").sort == @word.split("").sort
+          anagrams << psbl_anagram 
+        end
       end 
       
      
