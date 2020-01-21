@@ -26,28 +26,6 @@ class	Anagram
 				false
 			end
 		end
-		# poss_array.collect do |poss_anagram|
-		# 	poss_split = poss_anagram.split("")
-		# 	if 
-		# 		poss_split.all? do |letter|
-		# 			@word.include?(letter)	
-		# 		end
-		# 	else
-		# 		"fuck"
-		# 	end
-		# end	
+
 	end
 end
-
-detector = Anagram.new('bar')
-detector.match(['ab', 'abc', 'bac'])
-			# if poss_word.length == @word.length
-			# if poss_word.length == @word.length
-			# 	i = 0
-			# 	while i < @word.length
-			# 	 	if poss_word.include?(@word[i])
-			#  			poss_word[i]
-			#  		end
-			#  		i += 1
-			#  	end 
-			# end
