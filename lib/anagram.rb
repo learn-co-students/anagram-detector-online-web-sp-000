@@ -1,5 +1,5 @@
 class Anagram
-  attr_accessor :match
+  attr_accessor :word
 
   def initialize(word)
     @word = word
@@ -8,7 +8,7 @@ class Anagram
   def match(word_array)
     anagrams_array = []
     word_array.collect do |word|
-      anagrams_array << word if @word.split("").sort.join("") == word.split("").sort.join("")
+      anagrams_array << word if @word.split("").sort == word.split("").sort
     end
     anagrams_array
   end
