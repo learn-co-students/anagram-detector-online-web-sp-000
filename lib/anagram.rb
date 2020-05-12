@@ -17,7 +17,3 @@ class Anagram
         sorted_words
     end
 end
-
-test_array = ["enlists", "google", "inlets"]
-listen = Anagram.new("listen")
-listen.match(test_array)
