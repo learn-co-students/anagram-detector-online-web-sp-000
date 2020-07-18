@@ -8,10 +8,10 @@ class Anagram
   end
   
   def match(words)
-    words.select {|word|word.split("").sort == sorted_word}
+    words.select {|word|word.split("").sort == sorted_letters}
   end
   
-  def sorted_word
+  def sorted_letters
     self.word.split("").sort
   end
 end
