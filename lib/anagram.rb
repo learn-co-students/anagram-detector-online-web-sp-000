@@ -10,12 +10,7 @@ class Anagram
 
     def match(letters)
         letters.select do |letter|
-            is_match?(letter)
+            letter.chars.sort == @sentence_data.chars.sort
         end
     end
-
-            def is_match?(letter)
-                letter.chars.sort == @sentence_data.chars.sort
 end
-end
-    
