@@ -2,15 +2,15 @@
 class Anagram
 
 
-    attr_accessor :sentence_data
+    attr_accessor :input
 
     def initialize(sentence)
-   @sentence_data = sentence
+   @input = sentence
     end
 
     def match(letters)
         letters.select do |letter|
-            letter.chars.sort == @sentence_data.chars.sort
+            letter.chars.sort == @input.chars.sort
         end
     end
 end
