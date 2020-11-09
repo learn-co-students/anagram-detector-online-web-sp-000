@@ -12,7 +12,7 @@ class Anagram
   end
 
   def match(match_words)
-    control = split_letters
+    control = self.split_letters
     match_words.select { |w| w.split("").sort == control }
   end
 
