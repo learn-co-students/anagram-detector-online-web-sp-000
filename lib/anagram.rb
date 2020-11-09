@@ -1,1 +1,19 @@
-# Your code goes here!
+require 'pry'
+
+class Anagram
+  attr_accessor :word
+
+  def initialize(word)
+    @word = word
+  end
+
+  def split_letters
+    @word.split("").sort
+  end
+
+  def match(match_words)
+    control = split_letters
+    match_words.select { |w| w.split("").sort == control }
+  end
+
+end
