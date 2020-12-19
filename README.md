@@ -17,6 +17,7 @@ array.
 In other words, given: `"listen"` and `%w(enlists google inlets banana)` the
 program should return `["inlets"]`.
 
+
 ```ruby
 listen = Anagram.new("listen")
 listen.match(%w(enlists google inlets banana))
@@ -76,4 +77,3 @@ comparison:
 [array_shortcut]: http://stackoverflow.com/questions/1274675/ruby-what-does-warray-mean
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/anagram-detector' title='Anagram Detector'>Anagram Detector</a> on Learn.co and start learning to code for free.</p>
-
