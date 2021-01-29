@@ -6,18 +6,27 @@ class Anagram
   def initialize(words)
     @words = words
   end 
-  
+
   def match(words)
-    # words.each do |element|
-    #   attempt = element.split
-    # attempt.match(/diaper/)
-    words.scan(/diaper/)
-  end 
-end
+    (/\bdiaper\b/)
+    #words.match(/\bdiaper\b/)
+    #words = (/\bdiaper\b/)
+  end
+end 
+    
+    
+    
+   # ^[d]{1}\.[r]{1}$
+   # \w+ (dipper)
+   #"diaper".match(%w(hello world zombies pants dipper))
+    # words = %w()
+    # words.match(/diaper/)
+  
+ 
 
-
-# a.scan(/\w+/) {|w| print "<<#{w}>> " }
-# print "\n"
-# a.scan(/(.)(.)/) {|x,y| print y, x }
-# print "\n"
+#%w(foo bar) is a shortcut for ["foo", "bar"]
+# 'hello'.match('xx')         #=> nil
+# 'hello'.match('(.)\1')      #=> #<MatchData "ll" 1:"l">
+#/y/.match('haystack') #=> #<MatchData "y">
+#hello world zombies pants dipper'.match('diaper')
 
