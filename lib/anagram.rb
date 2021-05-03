@@ -1,1 +1,6 @@
-# Your code goes here!
+class anagram
+
+    attr_accessor :word
+end
+
+end
